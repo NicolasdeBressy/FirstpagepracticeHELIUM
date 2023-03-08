@@ -1,0 +1,19 @@
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px 20px;
+
+  @media screen and (max-width:600px) {
+    grid-template-columns: 35% 65%;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: end;
+
+    @media screen and (max-width:600px) {
+      font-size: 0.7rem;
+    }
+    }
+  }

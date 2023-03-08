@@ -1,0 +1,52 @@
+.infos {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  background: $black2;
+  border-radius: 10px;
+
+  @media screen and (max-width:600px) {
+    display: block;
+    text-align: center;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @media screen and (max-width:600px) {
+      align-items: center;
+    }
+  }
+    button {
+      margin: 5px;
+      padding: 10px 0;
+      width: 150px;
+      background: $violet1;
+      color: $white1;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .investors {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 86%;
+    }
+    .img-container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      
+      img {
+        height: 60px;
+
+        @media screen and (max-width:600px) {
+          height: 35px;
+        }
+      }
+    }
+    
+}

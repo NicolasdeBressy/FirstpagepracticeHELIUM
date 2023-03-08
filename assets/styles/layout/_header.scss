@@ -1,0 +1,36 @@
+.header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin: 30px auto;
+
+  @media screen and (max-width:600px) {
+    display: block;
+  }
+
+  .header-left-container {
+    h1 {
+      font-size: 5rem;
+
+      @media screen and (max-width:900px) {
+          font-size: 2.5rem;
+      }
+    }
+    h2 {
+      color: $violet1;
+      font-size: 1.8rem;
+
+      @media screen and (max-width:900px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  .header-right {
+    width: 100%;
+
+    #modem {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
